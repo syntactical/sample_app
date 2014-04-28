@@ -21,6 +21,6 @@ production:
   host: localhost
   username: sample_app
   password: postgres
-  database: dample_app-prod
+  database: sample_app-prod
   pool: 5
   timeout: 5000

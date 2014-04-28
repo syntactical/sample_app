@@ -27,6 +27,12 @@ describe User do
     it { should_not be_valid }
   end
 
+  describe "when user password is less than 6 characters" do
+    before { @user.password = @user.password_confirmation = "X" * 5 }
+
+    it { should_not be_valid }
+  end
+
   describe "when user email is blank" do
     before { @user.email = "" }
 
